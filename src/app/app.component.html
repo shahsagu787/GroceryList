@@ -1,0 +1,34 @@
+<!-- 
+  Project : GroceryList
+  Purpose : To submit assignment 2
+  Revesion History : Created by Sagar Shah on October, 2021 
+-->
+<mat-toolbar>
+  <button 
+    (click)="drawer.toggle()"
+    mat-icon-button 
+    class="example-icon" 
+    aria-label="Example icon-button with menu icon">
+   <mat-icon>menu</mat-icon>
+ </button>
+ <span>{{ title }}</span>
+</mat-toolbar>
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer mode="side" opened>
+    <mat-nav-list>
+      <a mat-list-item routerLink="entry" (click)="drawer.toggle()"><mat-icon matListIcon>list</mat-icon>Grocery List</a>
+      <a mat-list-item routerLink="history" (click)="drawer.toggle()"><mat-icon matListIcon>history</mat-icon>Product History</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="about" (click)="drawer.toggle()"><mat-icon matListIcon>info</mat-icon>About us</a>
+    </mat-nav-list>
+    
+  </mat-drawer>
+
+  <mat-drawer-content>
+    
+   
+    
+    <router-outlet (activate)="changeTitle($event.pageTitle)"></router-outlet>
+
+  </mat-drawer-content>
+</mat-drawer-container>

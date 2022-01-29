@@ -1,0 +1,29 @@
+:host{
+   
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    mat-drawer-container,mat-drawer{
+       flex: 1;
+       background: rgb(43, 43, 41);
+       color: white;
+    
+    }
+
+    mat-drawer{
+        background: rgb(73, 73, 72);
+        color: white;
+    }
+
+    mat-toolbar{
+        background: rgb(24, 24, 21);
+        color: white;
+    }
+
+    a,button,input{
+        color: white;
+    }
+
+    
+}

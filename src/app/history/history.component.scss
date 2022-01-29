@@ -1,0 +1,43 @@
+:host{
+
+
+    div{
+        
+        text-align: center;
+        padding: 1em; 
+    }
+
+    div button{
+        margin: 1em;
+        background: rgb(249, 253, 0);
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    div table{
+        margin: auto;
+    }
+
+    table thead th {
+        color: rgb(68, 0, 255);
+        padding: 1em;
+        text-align: center;
+    }
+
+    table tbody td {
+        color: rgb(0, 0, 0);
+        padding: 1em;
+        text-align: center;
+    }
+
+    .myTable{
+        background-color: peachpuff;
+        font-size: larger;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        border-radius: 10px;
+        border:3px solid rgb(0, 0, 0);
+  
+    }
+
+}

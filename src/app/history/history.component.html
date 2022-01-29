@@ -1,0 +1,26 @@
+
+
+    <div>
+        <form  (ngSubmit)="onSubmit($event)">
+        <table mat-table matSort (matSortChange)="sortedData($event)" class="myTable">
+            <thead>
+                <th mat-sort-header="item">item</th>
+                <th  mat-sort-header="quantity">Quantity</th>
+            </thead>
+            <tbody *ngFor="let keys of datastore.histroryAll;">
+                <tr>
+                    <td>
+                        {{keys.item}}
+                    </td>
+                    <td >
+                        {{keys.quantity}}
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
+       
+        <button mat-stroked-button type="submit">Reset</button>
+        
+    </form>
+    </div>
